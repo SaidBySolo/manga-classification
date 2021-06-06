@@ -31,5 +31,6 @@ with torch.no_grad():
 
     model.eval()
     output = model(img)
-index[int(torch.max(output.data, 1)[1].numpy())]
+    val = index[int(torch.max(output.data, 1)[1].numpy())]
+print(val)
 ```

@@ -12,9 +12,13 @@
 And run
 
 ```py
+import torch
+from torchvision import transforms
+import PIL
+
 model = torch.load("./full.pt", map_location=torch.device('cpu'))
 index = ['1536576', '1570712', '1613730']
-import PIL
+
 with torch.no_grad():
     dtf = transforms.Compose([
             transforms.Resize(256),

@@ -7,7 +7,7 @@
 
 ## How can i validate?
 
-[Download full model](model/full.ft)
+[Download full model](model/full.pt)
 
 And run
 
